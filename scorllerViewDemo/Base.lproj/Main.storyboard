@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="scorllerViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Ru-jo-TJG" userLabel="titleView">
+                                <rect key="frame" x="20" y="20" width="984" height="77"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5a-ZM-jt5">
+                                        <rect key="frame" x="10" y="0.0" width="197" height="77"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                        <state key="normal" title="第一頁"/>
+                                        <connections>
+                                            <action selector="btned1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qnx-dE-rWL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LMl-3N-PRI">
+                                        <rect key="frame" x="393.5" y="20" width="197" height="36"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                        <state key="normal" title="第二頁"/>
+                                        <connections>
+                                            <action selector="btned2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xkg-cs-zVN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZP-EW-mqp">
+                                        <rect key="frame" x="777" y="0.0" width="197" height="77"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                        <state key="normal" title="第三頁"/>
+                                        <connections>
+                                            <action selector="btned3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yg1-0X-EdH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1137254902" green="0.91372549020000005" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="KZP-EW-mqp" secondAttribute="bottom" id="BYG-8z-hUn"/>
+                                    <constraint firstItem="KZP-EW-mqp" firstAttribute="width" secondItem="8Ru-jo-TJG" secondAttribute="width" multiplier="1:5" id="GUN-V8-iio"/>
+                                    <constraint firstItem="KZP-EW-mqp" firstAttribute="top" secondItem="8Ru-jo-TJG" secondAttribute="top" id="MwI-JM-dsn"/>
+                                    <constraint firstItem="d5a-ZM-jt5" firstAttribute="top" secondItem="8Ru-jo-TJG" secondAttribute="top" id="SpR-b9-9jy"/>
+                                    <constraint firstItem="LMl-3N-PRI" firstAttribute="width" secondItem="8Ru-jo-TJG" secondAttribute="width" multiplier="1:5" id="Tb7-oQ-o6C"/>
+                                    <constraint firstAttribute="trailing" secondItem="KZP-EW-mqp" secondAttribute="trailing" constant="10" id="VuU-Oc-jEs"/>
+                                    <constraint firstItem="LMl-3N-PRI" firstAttribute="centerX" secondItem="8Ru-jo-TJG" secondAttribute="centerX" id="WbF-Xf-rQq"/>
+                                    <constraint firstItem="d5a-ZM-jt5" firstAttribute="leading" secondItem="8Ru-jo-TJG" secondAttribute="leading" constant="10" id="Ybo-0Q-YSM"/>
+                                    <constraint firstItem="LMl-3N-PRI" firstAttribute="centerY" secondItem="8Ru-jo-TJG" secondAttribute="centerY" id="cOH-RY-jZH"/>
+                                    <constraint firstAttribute="bottom" secondItem="d5a-ZM-jt5" secondAttribute="bottom" id="kO3-sM-Ysw"/>
+                                    <constraint firstItem="d5a-ZM-jt5" firstAttribute="width" secondItem="8Ru-jo-TJG" secondAttribute="width" multiplier="1:5" id="wwi-ZC-lgv"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" scrollEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOn-qp-HDN">
+                                <rect key="frame" x="0.0" y="97" width="1024" height="691"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="02f-sP-6Rx">
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="691"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="02f-sP-6Rx" firstAttribute="height" secondItem="qOn-qp-HDN" secondAttribute="height" id="3RE-Xx-YxI"/>
+                                    <constraint firstItem="02f-sP-6Rx" firstAttribute="width" secondItem="qOn-qp-HDN" secondAttribute="width" id="JiT-5g-Kfp"/>
+                                    <constraint firstItem="02f-sP-6Rx" firstAttribute="leading" secondItem="qOn-qp-HDN" secondAttribute="leading" id="OSh-sX-TLh"/>
+                                    <constraint firstItem="02f-sP-6Rx" firstAttribute="top" secondItem="qOn-qp-HDN" secondAttribute="top" id="eUR-Z0-Hh0"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qOn-qp-HDN" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Hvf-Mr-gv8"/>
+                            <constraint firstItem="8Ru-jo-TJG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Mr9-HR-cBP"/>
+                            <constraint firstItem="qOn-qp-HDN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="OSv-ml-2jr"/>
+                            <constraint firstItem="qOn-qp-HDN" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="9:10" id="YiU-To-1v1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8Ru-jo-TJG" secondAttribute="trailing" id="cKx-70-j8v"/>
+                            <constraint firstItem="8Ru-jo-TJG" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:10" id="gfM-P3-6e4"/>
+                            <constraint firstItem="qOn-qp-HDN" firstAttribute="top" secondItem="8Ru-jo-TJG" secondAttribute="bottom" id="hVQ-8N-2kO"/>
+                            <constraint firstItem="8Ru-jo-TJG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="k9P-mG-4Rz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="brned1" destination="d5a-ZM-jt5" id="RTa-qn-dOb"/>
+                        <outlet property="btned2" destination="LMl-3N-PRI" id="mvx-ki-tV8"/>
+                        <outlet property="btned3" destination="KZP-EW-mqp" id="bUS-TV-vXA"/>
+                        <outlet property="scrollView" destination="qOn-qp-HDN" id="OnN-jR-xas"/>
+                        <outlet property="uiView" destination="02f-sP-6Rx" id="spn-1F-ceR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.77343749999999" y="123.4375"/>
+        </scene>
+    </scenes>
+</document>
